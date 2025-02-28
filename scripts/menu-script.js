@@ -175,6 +175,7 @@ async function getMenu() {
         buildMenu(menu);
     } catch (error) {
         alert("API Failed");
+        console.log(error);
     }
 }
 
