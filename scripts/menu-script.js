@@ -1,6 +1,6 @@
 "strict";
 
-const menuFile = "./assets/menu.json";
+const menuFile = "../assets/menu.json";
 let menu = [];
 let links = [];
 let currentMenuIndex = null;
