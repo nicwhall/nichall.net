@@ -1,0 +1,308 @@
+:root {
+    --bbc-font: Helvetica, Arial, freesans, sans-serif;
+    --bbc-font-legacy: Arial, Helvetica, freesans, sans-serif;
+}
+
+body {
+    font-family: var(--bbc-font);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#topbar {
+    width: 1000px;
+    margin: 0 auto;
+    height: 40px;
+    margin-top:3rem
+}
+
+#logo {
+    margin-top: 8px;
+    width: 90px;
+    float: left;
+}
+
+.topbar-section {
+    float: left;
+    border-left: 1px #cccccc solid;
+    height: 100%;
+    margin-left: 8px;
+}
+
+.topbar-menu {
+    font-weight: Bold;
+    font-size: 90%;
+    padding: 12px 12px 0 12px;
+    height: 28px;
+}
+
+#signin-image {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+    float: left;
+}
+
+#signin-text {
+    font-weight: Bold;
+    font-size: 90%;
+    position: relative;
+    top: 12px;
+    padding-right: 50px;
+}
+
+#belldiv {
+    float: left;
+    height: 25px;
+    margin: 0 0 0 8px;
+}
+
+#wigglyline {
+    float: left;
+    height: 40px;
+}
+
+#bell {
+    float: left;
+    height: 25px;
+    margin: 8px 8px 8px;
+}
+
+#more-arrow {
+    height: 15px;
+    margin-left: 20px;
+}
+
+#search-box {
+    background-color: #e4e4e4;
+    border: none;
+    font-weight: bold font-size: 14px;
+    padding: 5px;
+    margin: 8px 0 8px 8px;
+    float: left;
+    width: 150px;
+}
+
+#magnifying-glass {
+    height: 28px;
+    margin-top: 8px;
+}
+
+.clear {
+    clear: both;
+}
+
+#menu-bar-container {
+    background-color: #bb1919;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border-top: 1px #cccccc solid;
+}
+
+#menu-bar {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    align: center;
+    text-transform: uppercase;
+}
+
+#local-news {
+    border: 1px #bb4545 solid;
+    float: right;
+    width: 180px;
+    padding: 5px 5px 0 10px;
+    margin: 5px 10px 0 0;
+}
+
+#local-news a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    top: -8px;
+}
+
+#local-news a:hover {
+    text-decoration: underline;
+}
+
+#local-news img {
+    height: 40px;
+
+}
+
+#menu-bar2-container {
+    background-color: #a91717;
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+
+#menu-bar2 {
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    float: left;
+}
+
+#menu-bar2 a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    border-right: 1px #bb4545 solid;
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+}
+
+#menu-bar2 a:hover {
+    text-decoration: underline;
+}
+
+.no-border {
+    border: none !important;
+}
+
+#down-arrow {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: 10px;
+}
+
+#page-container {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 20px;
+    border-bottom: #a91717 2px solid;
+    width: 105px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h3 a:hover {
+    color: #1167a8;
+}
+
+#article-container {
+    border-right: 1px solid #cccccc;
+    float: left;
+    width: 700px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+#article-summary {
+    color: #5a5a5a;
+    width: 280px;
+    float: left;
+}
+
+#article-summary img {
+    height: 15px;
+    position: relative;
+    top: 2px;
+}
+
+#topic-link {
+    text-decoration: none;
+    color: #a91717;
+    border-left: 1px solid #cccccc;
+    padding-left: 10px;
+}
+
+#article-summary a:hover {
+    color: #1167a8;
+}
+
+#main-article-image {
+    width: 400px;
+    margin-left: 10px;
+}
+
+#article-hr {
+    border-top: 1px solid #a91717;
+    width: 50px;
+}
+
+.article-link {
+    color: black;
+}
+
+#watch-listen {
+    width: 260px;
+    margin-left: 10px;
+    float: right;
+}
+
+h4 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.article-images {
+    float: left;
+    width: 90px;
+    margin-right: 10px;
+}
+
+.side-article {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.side-article a:hover {
+    color: #1167a8;
+}
+
+.side-article img {
+    height: 15px;
+    position: relative;
+    top: 2px;
+    padding: 0 10px 0 100px;
+}
+
+#side-article-date {
+    color: #5a5a5a;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+#side-article-date1 {
+    color: #5a5a5a;
+    font-weight: normal;
+    font-size: 16px;
+    border-right: 1px solid #cccccc;
+}
+
+#article-category {
+    font-size: 18px;
+}
