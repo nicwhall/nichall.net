@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Events</title>
+    <link rel="stylesheet" href="events.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="backdiv">
+      <button id="backbtn">
+        <a id="backlink" href="../jsbootcamp/">Home</a>
+      </button>
+    </div>
+    <div class="main">
+      <h1>Add Event Listeners</h1>
+      <button id="btn1">Click Me!</button>
+      <br />
+      <br />
+      <button id="btnTry">Try To Click Me!</button>
+      <br />
+      <br />
+      <section id="boxes"></section>
+      <br />
+      <div>
+        <form id="signup-form" action="/post" method="get">
+          <input
+            type="text"
+            name="creditCard"
+            id="cc"
+            placeholder="credit card"
+          />
+          <label
+            >I agree to terms
+            <input type="checkbox" name="Terms" id="terms" />
+          </label>
+          <select name="veggie" id="veggie">
+            <option value="eggplant">Eggplant</option>
+            <option value="asparagus">Asparagus</option>
+            <option value="carrot">Carrot</option>
+          </select>
+          <input type="submit" />
+        </form>
+      </div>
+    </div>
+    <script src="events.js"></script>
+  </body>
+</html>
