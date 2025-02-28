@@ -1,0 +1,249 @@
+[
+    {
+        "menu": "HTML & CSS",
+        "options": [
+            {
+                "name": "Alignment",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/alignment.html"
+            },
+            {
+                "name": "Borders",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/borders.html"
+            },
+            {
+                "name": "Circles",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/circles.html"
+            },
+            {
+                "name": "Color",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/color.html"
+            },
+            {
+                "name": "Div Style",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/divstyle.html"
+            },
+            {
+                "name": "Flex Box",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/flexbox.html"
+            },
+            {
+                "name": "Float",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/float.html"
+            },
+            {
+                "name": "Gradients",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/gradients.html"
+            },
+            {
+                "name": "Links",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/links.html"
+            },
+            {
+                "name": "Margins",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/margins.html"
+            },
+            {
+                "name": "Padding",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/padding.html"
+            },
+            {
+                "name": "Positioning",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/positioning.html"
+            },
+            {
+                "name": "Psuedo Selectors",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/pseudoselectors.html"
+            },
+            {
+                "name": "Shadow",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/shadow.html"
+            },
+            {
+                "name": "Text Styling",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/textstyling.html"
+            },
+            {
+                "name": "Transform",
+                "type": "text/HTML",
+                "url": "./webdevelopercourse/3-css/transform.html"
+            },
+            {
+                "name": "CSS Further Reading",
+                "type": "application/pdf",
+                "url": "./webdevelopercourse/3-css/Further Reading 2 - CSS.pdf"
+            },
+            {
+                "name": "CSS Reference",
+                "type": "application/pdf",
+                "url": "./webdevelopercourse/3-css/Reference 2 - CSS.pdf"
+            },
+            {
+                "name": "Skyline",
+                "type": "text/HTML",
+                "url": "./css/skyline/"
+            },
+            {
+                "name": "Penguin",
+                "type": "text/HTML",
+                "url": "./css/penguin/"
+            },
+            {
+                "name": "Magazine",
+                "type": "text/HTML",
+                "url": "./css/magazine/"
+            },
+            {
+                "name": "Ferris Wheel",
+                "type": "text/HTML",
+                "url": "./css/ferriswheel/"
+            },
+            {
+                "name": "Quiz",
+                "type": "text/HTML",
+                "url": "./css/quiz/"
+            },
+            {
+                "name": "BootStrap",
+                "type": "text/HTML",
+                "url": "./bootstrap/index.html"
+            }
+        ]
+    },
+    {
+        "menu": "JavaScript",
+        "options": [
+            {
+                "name": "Complete JavaScript Course",
+                "type": "text/HTML",
+                "url": "./CJSC/"
+            },
+            {
+                "name": "JavaScript Projects",
+                "type": "text/HTML",
+                "url": "./jsprojects"
+            },
+            {
+                "name": "JS Boot Camp",
+                "type": "text/HTML",
+                "url": "./jsbootcamp"
+            },
+            {
+                "name": "Facts (js Version)",
+                "type": "text/HTML",
+                "url": "./today-i-learned/jsversion"
+            },
+            {
+                "name": "Facts (React Version)",
+                "type": "text/HTML",
+                "url": "http://192.168.7.135:3005"
+            },
+            {
+                "name": "Fight a Dragon",
+                "type": "text/HTML",
+                "url": "./javascript/dragon/"
+            },
+            {
+                "name": "Random Color",
+                "type": "text/HTML",
+                "url": "./javascript/randomcolor/"
+            }
+        ]
+    },
+    {
+        "menu": "NodeJS",
+        "options": [
+            {
+                "name": "Facts React Version",
+                "type": "text/HTML",
+                "url": "http://192.168.7.135:3005"
+            },
+            {
+                "name": "Node Farm",
+                "type": "text/HTML",
+                "url": "./nodefarm/"
+            },
+            {
+                "name": "React Profile",
+                "type": "text/HTML",
+                "url": "http://localhost:5173",
+                "target": "_blanks"
+            },
+            {
+                "name": "iSeries Node Farm",
+                "type": "text/HTML",
+                "url": "./iseriesnodefarm/"
+            },
+            {
+                "name": "iSeries ODBC",
+                "type": "text/HTML",
+                "url": "./iseriesODBC/"
+            },
+            {
+                "name": "iSeries API",
+                "type": "text/HTML",
+                "url": "./iseriesapi/"
+            },
+            {
+                "name": "NA Tours",
+                "type": "text/HTML",
+                "url": "http://192.168.7.135:8000/api/v1/tours"
+            }
+        ]
+    },
+    {
+        "menu": "PHP",
+        "options": [
+            {
+                "name": "Social Network",
+                "type": "text/HTML",
+                "url": "./socialnetwork/"
+            }
+        ]
+    },
+    {
+        "menu": "Python",
+        "options": [
+            {
+                "name": "Python Cheat Sheet",
+                "type": "text/HTML",
+                "url": "./pythoncheatsheets/"
+            }
+        ]
+    },
+    {
+        "menu": "Document Links",
+        "options": [
+            {
+                "name": "What is the HTML DOM?",
+                "type": "link",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction",
+                "target": "_blanks"
+            },
+            {
+                "name": "Introduction to the DOM - Web APIs",
+                "type": "link",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/API"
+            },
+            {
+                "name": "Media Types",
+                "type": "link",
+                "url": "https://www.iana.org/assignments/media-types/media-types.xhtml"
+            }
+        ]
+    }
+]
