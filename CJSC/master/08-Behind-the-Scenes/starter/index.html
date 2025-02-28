@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>How JavaScript Works Behind the Scenes</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to top left, #2888b4, #6fd5d5);
+      }
+      h1 {
+        font-family: sans-serif;
+        font-size: 40px;
+        text-decoration: underline;
+        /* line-height: 1.3; */
+        width: 100vw;
+        padding-top: 10px;
+        text-align: center;
+        color: white;
+        margin-top: 3rem;
+      }
+            h2 {
+        font-family: sans-serif;
+        font-size: 25px;
+        /* line-height: 1.3; */
+        width: 100%;
+        padding-bottom: 5px;
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+        <div id="backdiv">
+      <button id="backbtn">
+        <a id="backlink" href="/CJSC">Home</a>
+      </button>
+    </div>
+    <div>
+    <h1>How JavaScript Works Behind the Scenes</h1>
+    <div><h2>High Level - Manages resources</h2></div>
+    <div>
+      <h2>Garbage Collected - Memory management removes unused objects</h2>
+    </div>
+    <div><h2>Interpreted - JIT compiled in JS engine</h2></div>
+    <div>
+      <h2>
+        Multi-Paradigm - various methods of structuring code (Procedural, OOP,
+        Functional)
+      </h2>
+    </div>
+    <div>
+      <h2>
+        First-class functions - Functions treated as variables - pass into and
+        return from functions
+      </h2>
+    </div>
+    <div>
+      <h2>Dynamic - Dynamically typed - value determines data type</h2>
+    </div>
+    <div>
+      <h2>
+        Single-threaded - executes one thing at a time (overcome by using event
+        loop)
+      </h2>
+    </div>
+    <div>
+      <h2>Non-Blocking event loop -</h2>
+    </div>
+    <div>
+      <h2>
+        JS Engine - executes JS code (ChromeV8, Node) - Call Stack(execution
+        context) and Heap(objects in memory)
+      </h2>
+    </div>
+    <div>
+      <h2>Compilation - Source converted to (binary) machine code</h2>
+    </div>
+    <div>
+      <h2>
+        Interpretation - Source converted & executed line by line (old method)
+      </h2>
+    </div>
+    <div>
+      <h2>
+        Modern JS uses JIT Compilation - Entire source is converted then
+        executed and optimized
+      </h2>
+    </div>
+    <div>
+      <h2>
+        JS Runtime Browser = JS Engine + WEB API's (DOM, Timers, Console, Fetch
+        API, ...) <br />
+        provided by window object + Callback Queue (click, timer, data, ...)
+      </h2>
+    </div>
+    <div>
+      <h2>
+        JS Runtime NODE = JS Engine + C++ Bindings & Thread Pool + Callback
+        Queue (click, timer, data, ...)
+      </h2>
+    </div>
+    <div>
+      <h1>
+        Execution </h1>
+        <h2>
+        Global execution context created for top level code (code not included
+        in functions)
+        <br />
+        Execution context = environment in which JS is executed and stores all
+        necessary info (local variables, arguments etc) in functions) <br />
+        Only ever one global execution content <br />
+        Top level code execute <br />
+        Functions and callbacks executed <br />
+        One execution context per function <br />
+        This makes up the call stack
+      </h2>
+      <div>
+        <h1>
+          Execution Context contains </h1>
+        <h2>
+          1. Variable Environment (let, const, var declarations), functions,
+          arguments object <br />
+          2. Scope chain - references to variables outside of the function
+          <br />
+          3. this keyword <br />
+          Arrow functions do not get arguments object or this keyword, they can
+          us these objects from the closest regular function parent
+        </h1>
+      </div>
+      <div>
+        <h1>
+          Call Stack </h1>
+        <h2>
+          contains the execution contexts (functions) "stacked" to keep track of
+          where we are in the execution
+        </h2>
+      </div>
+      <div>
+        <h1>
+          Scope </h1>
+        <h2>
+          Where can variables be accessed and where not? <br />
+          Lexical scoping - scoping is controlled by placement of functions and
+          code blocks <br />
+          Scope is the space or environment in which a variable is declared
+          <br />
+          There are GLOBAL, FUNCTION and BLOCK scopes <br />
+          Scope of a variable is the region of code where the variable can be
+          accessed <br />
+        </h2>
+      </div>
+      <div>
+      <h1>
+        Global Scope </h1>
+        <h2>
+        Outside of any function or block <br />
+        Accessible everywhere
+      </h2>
+    </div>
+    <div>
+      <h1>
+        Function Scope </h1>
+        <h2>
+        Variables only accessible inside function <br />
+        Also called LOCAL scope
+      </h2>
+    </div>
+        <div>
+      <h1>
+        Block Scope (ES6)</h1>
+        <h2>
+       Everything inside curly braces<br />
+       Variables only accessible inside block <br>
+        BLOCK VARIABLES  ONLY APPLIES TO LET AND CONST VARIABLES <br>
+        VAR are function scoped <br>
+        Functions are block scoped in strict mode
+      </h2>
+    </div>
+            <div>
+      <h1>
+        Scope Chain </h1>
+        <h2>
+              Scope has access to variables from all outer scopes.  <br>
+        global scope{ <br>
+                &nbsp{function 1 Scope <br>
+                           &nbsp {function 2 scope  } <br>
+                &nbsp} <br>
+        }<br>
+Function 2 has access to function 1 and global variables <br>
+Engine looks up variables not in current scope in the scope chain. "Variable Lookup" <br>
+Scope chain contains all the variable environments of all parent scopes
+      </h2>
+    </div>
+    <div>
+      <h1>
+        Hoisting </h1>
+        <h2>
+        Makes some variables usable before they are declared "variables lifted to the top of their scope"<br>
+        Before execution a property is created for each variable in the variable environment object <br>
+        Function declarations are hoisted with an intial value of the actual function with block scope <br>
+        VAR are hoisted with no initial value(undefined) with function scope <br>
+        CONST & LET are not hoisted with no inital value (uninitialized in TDZ-Temporal dead zone - cant be used until declaration is executed) with block scope <br>
+        Function expressions and arrows - depends if using var or let/const <br>
+        <h1>
+        Variable Definition Best Practices </h1>
+        <h2>
+         DO NOT USE VAR <br>
+         DECLARE VARIABLES AT TOP OF EACH SCOPE <br>
+         DECLARE FUNCTIONS FIRST. USE AFTER DECLARATION <br>
+
+      </h2>
+    </div>
+    <div>
+      <h1>
+        this keyword/variable </h1>
+        <h2>
+        Created for every excution context (every function). Points to the "owner" of the function in which the this keyword is used. <br>
+        NOT static. Depends on how the function is called. Value is assigned when the function is actually called. <br><br>
+        1. Method - this = object that is calling the method. In example below 'this' is person object<br> <br>
+         const person = { <br>
+          &nbspname:"Bob", <br>
+          &nbspyear:"1989", <br>
+           &nbspcalcAge:function(){ <br>
+            &nbsp&nbspreturn 2037 - this.year; <br>
+          &nbsp }, <br>
+        } <br>
+                  person.calcAge() <br> <br>
+        2. Simple Function Call - this = undefined in strict mode otherwise browser window <br> <br>
+        3. Arrow Functions - this = this of surrounding function (lexical this) <br> <br>
+        4. Event Listener  - this = DOM element that the handler is attached to<br> <br>
+      </h2>
+    </div>
+    <div>
+            <h1>
+        this in Regular Functions vs Arrow functions</h1>
+        <h2>
+          never use an arrow function as a method ( function in object) <br>
+          use an arrow function inside a function to inherit this
+        </h2>
+    </div>
+        <div>
+        <h1>Objects vs Primitives</h1>
+        <h2>
+         <p style="text-decoration: underline">Primitives (primitive types - stored in execution context of call stack)</p> 
+Number <br>
+String <br>
+Boolean <br>
+Undefined <br>
+Null <br>
+Symbol <br>
+Bigint <br>
+Primitives are assigned memory address in Call Stack which has the value at that memory address and is immutable.
+         <p style="text-decoration: underline">Objects (reference types - stored in heap)</p> 
+         Object literal <br>
+         Arrays <br>
+         Functions <br>
+         etc. <br>
+         Objects are assigned memory address in Call Stack (immutable) which has<br> reference to memory address in Heap, which contains the value and is mutable.
+        </h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
