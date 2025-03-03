@@ -1,0 +1,10 @@
+#shape{
+    width:200px;
+    height:200px;
+    display: none;
+    position: relative;
+}       
+
+#time {
+    font-weight: bold;
+}

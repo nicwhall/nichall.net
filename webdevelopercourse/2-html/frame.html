@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+*       {margin:0;padding:0;}
+html, 
+body    {height:100%;  width:100%; overflow:hidden;}
+
+
+</style>
+</head>
+<body>
+
+<script>
+
+var newURL = "http://localhost:8001/RunDashboard.i4;tab_token=bcd942bc-4302-4e6a-ad21-e40efeccc172?dashUUID=e7409ff2-f846-44e1-a603-b78ec51b20b9&primaryOrg=1&clientOrg=1";
+
+var frame = document.createElement("IFRAME");
+	
+			frame.style.display = 'block';
+			frame.setAttribute("ID", "Frame");
+			frame.setAttribute("height", "100%");
+			frame.setAttribute("width", "100%");
+			frame.setAttribute("float", "right");
+			frame.setAttribute("allowtransparency", true);
+			frame.style.background = "#e1eaf1";
+			frame.src = "<html><head></head><body><script type='text/javascript' src='http://localhost:8001/JsAPI/v3?dashUUID=6f5fffdf-a23d-4662-83a7-70c0085a9911&token=ce010b40569ccd60f48bc265f6e3b6c6&showTitle=false&showToolbar=false'></script></body></html>";
+			document.body.appendChild(frame);
+
+</script>
+</body>
+</html>

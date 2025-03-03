@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>JavaScript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/jscss.css">
+
+    </head>
+
+<body">
+
+    <div id="tweets"></div>
+
+    <script type="text/javascript">
+
+        var tweetString = "";
+
+        var tweetsArray = ["Hello", "I like beer", "Goodnight", "Sweet Dreams"];
+
+        for(var i=0; i < tweetsArray.length; i++) {
+            
+             tweetString = tweetString + "<p>" +tweetsArray[i] + "</p>";
+        }
+
+        document.getElementById("tweets").innerHTML = tweetString;
+        
+    </script>
+
+</body>
+
+</html>

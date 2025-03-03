@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>JavaScript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/jscss.css">
+
+    <style type="text/css">
+        #shape {
+            position: relative;
+        }
+
+        #timeTaken {
+            font-weight: bold;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        //set variables
+        let start = new Date().getTime();
+        let color = getRandomColor();
+
+        //make shape appear after delay
+        function appearAfterDelay() {
+
+            //use timer to call make shape appear
+            // method to call, timer value
+            setTimeout(makeShapeAppear, Math.random() + 2000);
+        }
+
+        //get color
+        function getRandomColor() {
+
+            //set hex values to build color var
+            const letters = '0123456789ABCDEF';
+
+            //set color var
+            let color = '#';
+
+            //get six values for hex color value
+            for (let i = 0; i < 6; i++) {
+
+                // += addition assignment of position in letters array using random number to color var to get hex value
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function makeShapeAppear() {
+
+            let top = (getRandomNumber() * 400);
+            let left = Math.random() * 400;
+            let width = (Math.random() * 200) + 100;
+
+            //change shape based on random number
+            if (Math.random() > 0.5) {
+                document.getElementById("shape").style.borderRadius = "50%";
+            } else {
+                document.getElementById("shape").style.borderRadius = "0";
+            }
+
+            //set  style of shape
+            document.getElementById("shape").style.backgroundColor = getRandomColor();
+            document.getElementById("shape").style.width = width + "px";
+            document.getElementById("shape").style.height = width + "px";
+            document.getElementById("shape").style.top = top + "px";
+            document.getElementById("shape").style.left = left + "px";
+            document.getElementById("shape").style.display = "block";
+            document.getElementById("shape").style.border = "2px black solid";
+
+            //get current time
+            start = new Date().getTime();
+        }
+
+        function getRandomNumber() {
+            return randomNumber = Math.random();
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <p>
+    <h1>Test Your Reactions</h1>
+    </p>
+    <p>Click on the boxes and circles as quickly as you can.</p>
+    <p>Your time: <span id="timeTaken"></span></p>
+
+    <div id="shape"></div>
+
+    <script type="text/javascript">
+
+        appearAfterDelay();
+
+        document.getElementById("shape").onclick = function () {
+
+            document.getElementById("shape").style.display = "none";
+
+            //get current time
+            let end = new Date().getTime();
+
+            let timeTaken = (end - start) / 1000;
+
+            document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+            appearAfterDelay();
+
+        }
+
+    </script>
+
+</body>
+
+</html>

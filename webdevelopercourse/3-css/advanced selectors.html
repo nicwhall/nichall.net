@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>Webpage With Style</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <style>
+
+        h1{
+            color:red;
+        }
+
+        .green{
+            color: green;
+        }
+
+        #blue{
+            font-size: 200%;
+        }
+
+       /* Apply to p inside the div */
+        div p{
+            font-weight: bold;
+        }
+
+        /* Apply to all p inside a div with an h3 */
+        h3 ~ p{
+            text-decoration: underline;
+        }
+
+        /* Apply to all p inside a div following an h3 */
+        h3 + p{
+            font-size: 150%;
+        }
+
+        /* Apply to element attribute */
+        a[target]{
+            color:yellow;
+        }
+
+        /* Apply to links for *google */
+        a[href*="google.com"]{
+            font-size: 150%;
+        }
+
+        /*  
+            ^= - begins with
+            $= - ends with
+            ~= - has the value between two spaves
+            |= - has the value seperated by hyphens
+            
+        */
+
+
+    </style>
+ 
+</head>
+
+<body>
+   
+    <h1>I am a heading</h1>
+
+    <div>
+
+        <h3>I am an h3 element</h3>
+
+        <p class="green">I am a pragrapgh</p>
+
+        <p>I am inside the div</p>
+
+        <a id="blue" href="https://google.com" target="_blank">I am a link</a>
+
+    </div>
+
+    <div>
+
+        <h3>I am an h3 element</h3>
+
+        <p>I am another div</p>
+
+    </div>
+
+    <p>I am outside the div</p>
+
+    <a href="https://google.com">I am another link not set to yellow</a>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+    <head>
+
+        <title>JavaScript</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/jscss.css">
+        
+    </head>
+
+    <body>
+
+        <p id="text">Hello World</p>
+
+        <button id="myButton">Change text</button>
+
+        <hr>
+
+        <p id="secondParagraph">JavaScript is ...</p>
+        
+        <button id="secondButton">Change text</button>
+
+        <hr>
+
+        <p id="thirdParagraph"></p>
+        
+        <button id="addTextButton">Add/Remove text</button>
+
+        <hr>
+
+        <p id="fourthParagraph">This is some text</p>
+        
+        <button id="styleButton">Style text</button>
+  
+
+        <script type="text/javascript"> 
+
+                document.getElementById("myButton").onclick = function() {
+                    
+                    if (document.getElementById("text").innerHTML == "Hello World"){
+                        document.getElementById("text").innerHTML = "Hello Nic";
+                    }
+                    else{
+                        document.getElementById("text").innerHTML = "Hello World";
+                    }
+
+                }
+
+                document.getElementById("secondButton").onclick = function() {
+                    
+                    if (document.getElementById("secondParagraph").innerHTML == "JavaScript is ..."){
+                        document.getElementById("secondParagraph").innerHTML = "I think " + document.getElementById("secondParagraph").innerHTML + " awesome";
+                    }
+                    else{
+                        document.getElementById("secondParagraph").innerHTML = "JavaScript is ...";
+                    }
+
+                }
+
+                document.getElementById("addTextButton").onclick = function() {
+                    
+                    if (document.getElementById("thirdParagraph").innerHTML == ""){
+                        document.getElementById("thirdParagraph").innerHTML = "<h1>Added some header text</h1>";
+                    }
+                    else{
+                        document.getElementById("thirdParagraph").innerHTML = "";
+                    }
+
+                }
+        
+                document.getElementById("styleButton").onclick = function() {
+
+                    styledText = document.getElementById("fourthParagraph");
+                    styledTextStyles = window.getComputedStyle(styledText);
+                    //alert(styles.display);
+
+                    if(styledTextStyles.display == "none"){
+                        document.getElementById("fourthParagraph").style.display = "block"
+                        document.getElementById("fourthParagraph").style.color = "red";
+                    }
+                    else{
+                        document.getElementById("fourthParagraph").style.display = "none";
+                    }
+                }
+        
+        </script>
+        
+    </body>
+
+</html>
