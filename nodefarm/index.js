@@ -93,6 +93,6 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(3010, "192.168.7.135", () => {
+server.listen(3010, "localhost", () => {
     console.log("Listening on port 3010");
 });
